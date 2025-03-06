@@ -37,18 +37,18 @@ if (isset($_POST["submit"])) {
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <title>CRUD Application</title>
+   <title>Add new user</title>
 </head>
 
 <body>
-   <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #ffe2bc;">
-      User details CRUD Application
+   <nav class="navbar navbar-light justify-content-center fs-3 mb-5 text-center p-4" style="background-color: #ffe2bc;">
+   <h2>LEARNING ACADEMY</h2>
    </nav>
 
    <div class="container">
       <div class="text-center mb-4">
-         <h3>Add New User</h3>
-         <p class="text-muted">Complete the form below to add a new user</p>
+         <h3>Add New Student</h3>
+         <p class="text-muted">Complete the form below to add a new student</p>
       </div>
 
       <div class="container d-flex justify-content-center">
@@ -56,27 +56,27 @@ if (isset($_POST["submit"])) {
             <div class="row mb-3">
                <div class="col">
                   <label class="form-label">First Name:</label>
-                  <input type="text" class="form-control" name="first_name" placeholder="Albert">
+                  <input type="text" class="form-control" name="first_name" placeholder="First Name">
                </div>
 
                <div class="col">
                   <label class="form-label">Last Name:</label>
-                  <input type="text" class="form-control" name="last_name" placeholder="Einstein">
+                  <input type="text" class="form-control" name="last_name" placeholder="Last Name">
                </div>
             </div>
 
             <div class="mb-3">
                <label class="form-label">Email:</label>
-               <input type="email" class="form-control" name="email" placeholder="name@example.com">
+               <input type="email" class="form-control" name="email" placeholder="name@email.com">
             </div>
 
             <div class="form-group mb-3">
                <label>Gender:</label>
                &nbsp;
-               <input type="radio" class="form-check-input" name="gender" id="male" value="male">
+               <input type="radio" class="form-check-input" name="gender" id="male" value="Male">
                <label for="male" class="form-input-label">Male</label>
                &nbsp;
-               <input type="radio" class="form-check-input" name="gender" id="female" value="female">
+               <input type="radio" class="form-check-input" name="gender" id="female" value="Female">
                <label for="female" class="form-input-label">Female</label>
             </div>
 

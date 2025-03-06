@@ -38,17 +38,17 @@ if (isset($_POST["submit"])) {
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>PHP CRUD Application</title>
+  <title>Update Application</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #00ff5573;">
-    PHP Complete CRUD Application
+  <nav class="navbar navbar-light justify-content-center fs-3 mb-5 text-center p-4" style="background-color: #ffe2bc;">
+  <h2>LEARNING ACADEMY</h2>
   </nav>
 
   <div class="container">
     <div class="text-center mb-4">
-      <h3>Edit User Information</h3>
+      <h3>Edit Student Information</h3>
       <p class="text-muted">Click update after changing any information</p>
     </div>
 
@@ -80,10 +80,10 @@ if (isset($_POST["submit"])) {
         <div class="form-group mb-3">
           <label>Gender:</label>
           &nbsp;
-          <input type="radio" class="form-check-input" name="gender" id="male" value="male" <?php echo ($row["gender"] == 'male') ? "checked" : ""; ?>>
+          <input type="radio" class="form-check-input" name="gender" id="male" value="Male" <?php echo ($row["gender"] == 'Male') ? "checked" : ""; ?>>
           <label for="male" class="form-input-label">Male</label>
           &nbsp;
-          <input type="radio" class="form-check-input" name="gender" id="female" value="female" <?php echo ($row["gender"] == 'female') ? "checked" : ""; ?>>
+          <input type="radio" class="form-check-input" name="gender" id="female" value="Female" <?php echo ($row["gender"] == 'Female') ? "checked" : ""; ?>>
           <label for="female" class="form-input-label">Female</label>
         </div>
 
